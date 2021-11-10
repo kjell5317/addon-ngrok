@@ -1,0 +1,6 @@
+authtoken: "${ngrok_token}"
+
+tunnels:
+  drache:
+    proto: http
+    addr: "${drache_addr}"
