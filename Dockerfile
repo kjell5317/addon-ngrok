@@ -10,7 +10,6 @@ RUN set -x \
     && unzip -o /ngrok.zip -d /bin \
     && rm -f /ngrok.zip \
     && ngrok --version
-# && pip install git+http://github.com/Schmetzler/Freenom-dns-updater.git
 
 COPY run.sh update.sh template.yml /
 RUN chmod +x /run.sh
