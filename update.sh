@@ -12,7 +12,7 @@ do
         && [ "$domain1" != "$domain2" ]
     then
         domain1="$domain2"
-        bashio::log.info "Changed domain to $domain2"
+        bashio::log.info "Changed to $domain2"
         fdu domain forward $1 $2 $3 -u $domain1
     fi
 done

@@ -20,4 +20,4 @@ chmod +x update.sh
 bashio::log.info "Starting..."
 
 ngrok start -config /ngrok.yml --all & \
-    ./update.sh $user $pwd $domain
+  ./update.sh $user $pwd $domain
