@@ -8,7 +8,7 @@ pwd=$(bashio::config 'fn_pwd')
 domain=$(bashio::config 'fn_domain')
 
 export ng_token=$(bashio::config 'ng_token')
-export port=$(bashio::config 'port')
+export address=$(bashio::config 'address')
 rm -f ngrok.yml temp.yml
 ( echo "cat <<EOF >ngrok.yml";
   cat template.yml;

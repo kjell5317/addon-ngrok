@@ -1,6 +1,6 @@
 {
   "name": "Ngrok",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "slug": "ngrok",
   "url": "https://github.com/kjell5317/addon-ngrok",
   "description": "This addon creates Ngrok tunnels to your Home Assistant instance",
