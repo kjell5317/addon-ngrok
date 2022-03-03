@@ -16,7 +16,6 @@ rm -f ngrok.yml temp.yml
 ) >temp.yml
 . temp.yml
 
-pip install git+http://github.com/Schmetzler/Freenom-dns-updater.git
 chmod +x update.sh
 bashio::log.info "Starting..."
 
