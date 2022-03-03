@@ -1,6 +1,6 @@
 # Ngrok
 
-This addon create a Ngrok tunnel to your Home Assistant instance and forwards your Freenom domain to the tunnel endpoint so you don't have to worry about changing tunnel domains.
+This addon creates a Ngrok tunnel to your Home Assistant instance and forwards your Freenom domain to the tunnel endpoint so you don't have to worry about changing tunnel domains.
 
 ## Configuration
 
