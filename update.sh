@@ -4,6 +4,7 @@ set +u
 sleep 5
 domain1=$(curl -s 0.0.0.0:4040/api/tunnels | jq -r '.tunnels | .[0] | .public_url')
 bashio::log.info "$domain1"
+fdu domain forward $1 $2 $3 -u $domain1
 
 while true
 do
