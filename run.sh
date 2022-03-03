@@ -3,8 +3,12 @@ set +u
 
 CONFIG_PATH=/data/options.json
 
-export ngrok_token=$(bashio::config 'ng_token')
-export drache_addr=$(bashio::config 'drache.addr')
+user=$(bashio::config 'fn_user')
+pwd=$(bashio::config 'fn_pwd')
+domain=$(bashio::config 'fn_domain')
+
+export ng_token=$(bashio::config 'ng_token')
+export port=$(bashio::config 'port')
 rm -f ngrok.yml temp.yml
 ( echo "cat <<EOF >ngrok.yml";
   cat template.yml;
@@ -15,4 +19,4 @@ rm -f ngrok.yml temp.yml
 bashio::log.info "Starting..."
 
 ngrok start -config /ngrok.yml --all & \
-    ./update.sh
+    ./update.sh $user $pwd $domain

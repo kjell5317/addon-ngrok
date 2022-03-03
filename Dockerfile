@@ -5,12 +5,12 @@ ENV LANG C.UTF-8
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN set -x \
-    # Install ngrok (latest official stable from https://ngrok.com/download).
-    && apk add --no-cache curl \
+    && apk add --no-cache curl python3 py3-pip \
     && curl -Lo /ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip \
     && unzip -o /ngrok.zip -d /bin \
     && rm -f /ngrok.zip \
-    && ngrok --version
+    && ngrok --version \
+    && pip install git+http://github.com/Schmetzler/Freenom-dns-updater.git
 
 COPY run.sh update.sh template.yml /
 RUN chmod a+x /run.sh

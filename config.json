@@ -12,19 +12,17 @@
   },
   "options": {
     "ng_token": null,
-    "drache": {
-      "addr": null,
-      "cf_zone": null,
-      "cf_token": null
-    }
+    "fn_user": null,
+    "fn_pwd": null,
+    "fn_domain": null,
+    "port": 8123
   },
   "schema": {
     "ng_token": "str",
-    "drache": {
-      "addr": "str",
-      "cf_zone": "str",
-      "cf_token": "str"
-    }
+    "fn_user": "str",
+    "fn_pwd": "str",
+    "fn_domain": "str",
+    "port": "port"
   },
   "map": ["config"]
 }

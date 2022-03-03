@@ -1,6 +1,6 @@
-authtoken: "${ngrok_token}"
+authtoken: "${ng_token}"
 
 tunnels:
-  drache:
+  homeassistant:
     proto: http
-    addr: "${drache_addr}"
+    addr: "${port}"
