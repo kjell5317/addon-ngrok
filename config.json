@@ -1,9 +1,9 @@
 {
   "name": "Ngrok",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "slug": "ngrok",
   "url": "https://github.com/kjell5317/addon-ngrok",
-  "description": "This addon creates Ngrok tunnels to your instance.",
+  "description": "This addon creates Ngrok tunnels to your Home Assistant instance",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",
@@ -18,10 +18,10 @@
     "port": 8123
   },
   "schema": {
-    "ng_token": "str",
-    "fn_user": "str",
-    "fn_pwd": "str",
-    "fn_domain": "str",
+    "ng_token": "password",
+    "fn_user": "email",
+    "fn_pwd": "password",
+    "fn_domain": "url",
     "port": "port"
   },
   "map": ["config"]
