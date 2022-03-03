@@ -10,4 +10,16 @@ This addon creates a Ngrok tunnel to your Home Assistant instance and forwards y
 
 3. Lastly you can change the address of your Home Assistant instance if needed.
 
+4. Ensure you have the following in your `config.yaml`:
+```yaml
+http:
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 127.0.0.1
+    - ::1
+    - 172.16.0.0/12
+```
+
 You're ready to go!
