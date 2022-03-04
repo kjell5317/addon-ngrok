@@ -19,5 +19,5 @@ rm -f ngrok.yml temp.yml
 chmod +x update.sh
 bashio::log.info "Starting..."
 
-ngrok start -config /ngrok.yml --all & \
-  ./update.sh $user $pwd $domain
+ngrok start -config /ngrok.yml --all \
+  & ./update.sh $user $pwd $domain
