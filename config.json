@@ -21,5 +21,6 @@
     "fn_domain": "str",
     "address": "url"
   },
-  "map": ["config"]
+  "map": ["config"],
+  "init": false
 }
