@@ -1,6 +1,8 @@
 #!/usr/bin/with-contenv bashio
 set +u
 
+CONFIG_PATH=/data/options.json
+
 user=$(bashio::config 'fn_user')
 pwd=$(bashio::config 'fn_pwd')
 domain=$(bashio::config 'fn_domain')
