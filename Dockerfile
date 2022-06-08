@@ -9,7 +9,7 @@ RUN apk update && \
     && curl -Lo /ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip \
     && unzip -o /ngrok.zip -d /bin \
     && rm -f /ngrok.zip \
-    && pip install git+https://github.com/Schmetzler/Freenom-dns-updater.git
+    && pip install --no-cache-dir git+https://github.com/Schmetzler/Freenom-dns-updater.git
 
 COPY run.sh update.sh template.yml /
 RUN chmod +x /run.sh
