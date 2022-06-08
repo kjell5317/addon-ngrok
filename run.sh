@@ -1,8 +1,6 @@
 #!/usr/bin/with-contenv bashio
 set +u
 
-CONFIG_PATH=/data/options.json
-
 user=$(bashio::config 'fn_user')
 pwd=$(bashio::config 'fn_pwd')
 domain=$(bashio::config 'fn_domain')
@@ -20,4 +18,4 @@ chmod +x update.sh
 bashio::log.info "Starting..."
 
 ngrok start -config /ngrok.yml --all \
-  & ./update.sh $user $pwd $domain
+  & ./update.sh "$user" "$pwd" "$domain"
