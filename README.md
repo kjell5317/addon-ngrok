@@ -1,3 +1,5 @@
+There is [a new addon](https://github.com/brenner-tobias/addon-cloudflared) which has similar features but uses cloudflared so the Domains are automaticly updated without cloaking which is a lot more comfortable.
+
 # Ngrok & Freenom
 
 This addon creates a Ngrok tunnel to your Home Assistant instance and forwards your Freenom domain to the tunnel endpoint so you don't have to worry about changing tunnel domains.
