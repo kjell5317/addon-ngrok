@@ -1,4 +1,4 @@
-There is [a new addon](https://github.com/brenner-tobias/addon-cloudflared) which has similar features but uses cloudflared so the domains are automaticly updated without cloaking which is a lot more comfortable.
+There is [a new addon](https://github.com/brenner-tobias/addon-cloudflared) which has similar features but uses cloudflared so the domains are automaticly updated without cloaking which is a lot more comfortable. Pleas use cloudflared instead of this addon.
 
 # Ngrok & Freenom
 
